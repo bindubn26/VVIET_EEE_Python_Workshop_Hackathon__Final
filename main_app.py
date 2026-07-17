@@ -2,7 +2,13 @@ import streamlit as st
 from PIL import Image
 import os
 import tempfile
-from moviepy.editor import *
+import streamlit as st
+
+try:
+    import moviepy
+    st.write("MoviePy Version:", moviepy.__version__)
+except Exception as e:
+    st.error(e)
 from image_editor import *
 from audio_editor import *
 from voice_generator import *
