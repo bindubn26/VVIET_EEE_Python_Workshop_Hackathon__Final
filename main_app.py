@@ -6,7 +6,7 @@ import streamlit as st
 
 try:
     import moviepy
-    st.write("MoviePy Version:", moviepy.__version__)
+    st.write("moviePy Version:", moviepy.__version__)
 except Exception as e:
     st.error(e)
 from image_editor import *
